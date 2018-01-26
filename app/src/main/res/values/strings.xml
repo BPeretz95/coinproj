@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">coinproj6</string>
+    <string name="name">"@+id/textCoin"</string>
+</resources>
