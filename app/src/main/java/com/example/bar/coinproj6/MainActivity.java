@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     RequestQueue rq;
 
-    TextView   fbURLText, youtubeURLText, googlePlusURLText, nameText, priceText;
+    TextView   nameText, priceText, changeText;
 
-    String  facebookURL, youtubeURL, gplusURL, display_name, price;
+    String  display_name, price, cap24hrChange;
 
     String url ="https://coincap.io/page/BTC";
 
@@ -33,9 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         nameText = (TextView) findViewById(R.id.textCoin);
         priceText = (TextView) findViewById(R.id.textPrice);
-        fbURLText = (TextView) findViewById(R.id.textfacebookurl);
-        youtubeURLText = (TextView) findViewById(R.id.textyoutubeurl);
-        googlePlusURLText = findViewById(R.id.textgplusurl);
+        changeText = (TextView) findViewById(R.id.priceChange);
+
 
         sendjsonrequest();
 
@@ -49,15 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     display_name = response.getString("display_name");
                     price = response.getString("price");
-                    facebookURL = response.getString("facebook");
-                    youtubeURL = response.getString("youtube");
-                    gplusURL = response.getString("googleplus");
+                    cap24hrChange = response.getString("cap24hrChange");
 
                     nameText.setText(display_name);
                     priceText.setText(price);
-                    fbURLText.setText(facebookURL);
-                    youtubeURLText.setText(youtubeURL);
-                    googlePlusURLText.setText(gplusURL);
+                    changeText.setText(cap24hrChange);
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();
