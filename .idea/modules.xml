@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/coinproj6.iml" filepath="$PROJECT_DIR$/coinproj6.iml" />
+      <module fileurl="file://C:\Users\Bar Peretz\Desktop\coinproject\app\app.iml" filepath="C:\Users\Bar Peretz\Desktop\coinproject\app\app.iml" />
+      <module fileurl="file://C:\Users\Bar Peretz\Desktop\coinproject\coinproj6.iml" filepath="C:\Users\Bar Peretz\Desktop\coinproject\coinproj6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coinproject.iml" filepath="$PROJECT_DIR$/coinproject.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Coin Watch</string>
     <string name="name">"@+id/textCoin"</string>
+
+
+
 </resources>
