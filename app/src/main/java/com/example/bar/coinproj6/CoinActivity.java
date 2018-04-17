@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -39,11 +40,13 @@ public class CoinActivity extends AppCompatActivity {
 
     String request_url = "http://coincap.io/front";
 
+    public CoinActivity() {
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.coinpickactivity);
-
 
         rq = Volley.newRequestQueue(this);
 
@@ -59,6 +62,7 @@ public class CoinActivity extends AppCompatActivity {
         sendRequest();
 
     }
+
 
 
     public void sendRequest(){
@@ -102,4 +106,12 @@ public class CoinActivity extends AppCompatActivity {
 
     }
 
-}
+
+    }
+
+
+
+
+
+
+
