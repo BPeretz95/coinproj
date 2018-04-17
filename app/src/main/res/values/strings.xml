@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Coin Watch</string>
     <string name="name">"@+id/textCoin"</string>
+    <string name="shareProfile">"@+id/shareProfile"</string>
+    <string name="developerURL">"@+id/developerURL"</string>
 
 
 
