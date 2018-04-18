@@ -6,6 +6,7 @@ package com.example.bar.coinproj6;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -79,6 +80,7 @@ public class CoinActivity extends AppCompatActivity {
                         JSONObject jsonObject = response.getJSONObject(i);
 
                         dataCoin.setcoinName(jsonObject.getString("long"));
+                        dataCoin.setcoinSymbol(jsonObject.getString("short"));
 
                     } catch (JSONException e) {
                         e.printStackTrace();

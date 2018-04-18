@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/gold">
 
     <RelativeLayout
         android:id="@+id/singleRow"
@@ -10,17 +11,29 @@
 
 
         <TextView
-            android:id="@+id/pNametxt"
-            android:text="User Name"
+        android:id="@+id/pNametxt"
+        android:text="Coin Name"
+        android:textSize="20sp"
+        android:layout_marginTop="6dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/pSymboltxt"
+            android:text="Coin Symbol"
             android:textSize="20sp"
             android:layout_marginTop="6dp"
             android:maxLines="1"
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" />
-
 
 
     </RelativeLayout>
@@ -29,6 +42,6 @@
         android:layout_below="@+id/singleRow"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#f2f2f2" />
+        android:background="@color/black"/>
 
 </RelativeLayout>

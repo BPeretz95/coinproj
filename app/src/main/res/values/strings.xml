@@ -3,6 +3,7 @@
     <string name="name">"@+id/textCoin"</string>
     <string name="shareProfile">"@+id/shareProfile"</string>
     <string name="developerURL">"@+id/developerURL"</string>
+    <string name="description">Coin Watch is a data-tracking app that gives you Realtime - up to the second - data on the Top 25 traded alt-coins.</string>
 
 
 

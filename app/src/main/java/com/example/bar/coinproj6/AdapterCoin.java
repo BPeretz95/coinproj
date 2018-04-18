@@ -41,6 +41,7 @@ public class AdapterCoin extends RecyclerView.Adapter<AdapterCoin.ViewHolder> {
         DataCoin pu = dataCoin.get(position);
 
         holder.pName.setText(pu.getcoinName());
+        holder.pSymbol.setText(pu.getcoinSymbol());
 
 
 
@@ -48,12 +49,16 @@ public class AdapterCoin extends RecyclerView.Adapter<AdapterCoin.ViewHolder> {
 
     @Override
     public int getItemCount() {
+        if(dataCoin.size()>25){
+            return 25;
+        }else{
         return dataCoin.size();
-    }
+    }}
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView pName;
+        public TextView pSymbol;
         public View title;
 
         public ViewHolder(View itemView) {
@@ -61,6 +66,7 @@ public class AdapterCoin extends RecyclerView.Adapter<AdapterCoin.ViewHolder> {
             context = itemView.getContext();
 
             pName = (TextView) itemView.findViewById(R.id.pNametxt);
+            pSymbol = (TextView) itemView.findViewById(R.id.pSymboltxt);
 
             itemView.setOnClickListener(new View.OnClickListener() {
 
@@ -68,17 +74,16 @@ public class AdapterCoin extends RecyclerView.Adapter<AdapterCoin.ViewHolder> {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
+                    intent.putExtra(String.valueOf(R.id.pSymboltxt), pSymbol.getText().toString());
                     view.getContext().startActivity(intent);
                 }
             });
 
-            }
-
         }
+
+    }
 
 
 
 
 }
-
-
